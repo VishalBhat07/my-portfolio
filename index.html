@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishal Bhat - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/36e4dd0220.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header section -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img class="logo" src="/Assets/images-Vishal/logo.png" alt="" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Student at RVCE , Bengaluru .</p>
+          <h1>Hi, I'm <span>Vishal Bhat</span> <br />A passionate coder .</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/Assets/images-Vishal/pfp.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Welcome to my portfolio! I'm Vishal Bhat, a passionate first-year
+              student pursuing Computer Science at R. V. College of Engineering,
+              Bengaluru. With a keen interest in data structures and algorithms
+              and web dev, I am driven by the pursuit of knowledge and
+              innovation in the ever-evolving field of engineering.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <!-- <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p> -->
+              <p class="tab-links" onclick="opentab('achievements')">
+                Achievements
+              </p>
+            </div>
+            <!-- Skills -->
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />Designing web interfaces
+                </li>
+                <li>
+                  <span>C++</span><br />Object oriented rogramming and STL
+                </li>
+                <!-- <li> <span>Data structures and Algorithms</span><br /></li> -->
+              </ul>
+            </div>
+            <!-- Education -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Schooling (2016 - 2021)</span><br />Blooming Buds
+                  School, Belagavi
+                </li>
+                <li>
+                  <span>College (2021 - 2023)</span><br />K. L. E. Independent
+                  PU College, Belagavi
+                </li>
+                <li>
+                  <span>Engineering (2023 - 2027)</span><br />
+                  R. V. College of Engineering, Bengaluru
+                </li>
+              </ul>
+            </div>
+            <!-- Experience -->
+            <!-- <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>10th fail</span><br />Designing Web/App interfaces
+                </li>
+                <li><span>11th fail</span><br />Web app development</li>
+                <li><span>12th fail</span><br />Building Android/iOS apps</li>
+              </ul>
+            </div> -->
+            <!-- Achievements -->
+            <div class="tab-contents" id="achievements">
+              <ul>
+                <li><span>KCET Rank</span><br />102</li>
+                <li><span>JEE Mains</span><br />99.29 percentile</li>
+                <li><span>NEET score</span><br />637</li>
+              </ul>
+            </div>
+            <!--  Skill ends -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services section -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+          <!-- Service 1 -->
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Quibusdam, quidem.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <!-- Service 2 -->
+          <div>
+            <i class="fa-solid fa-c"></i>
+            <h2>C/C++ Programming</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Quibusdam, quidem.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <!-- Service 3 -->
+          <div>
+            <i class="fa-brands fa-js"></i>
+            <h2>JS Programming</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Quibusdam, quidem.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------------Portfolio----------------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <!-- work 1 -->
+            <img src="/Assets/images-Vishal/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Weather App</h3>
+              <p>
+                A weather app built with HTML, CSS, and JavaScript provides
+                real-time weather updates. Users can input locations to retrieve
+                current weather conditions and forecasts. The app features a
+                responsive design for seamless access across devices.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <!-- work 2 -->
+          <div class="work">
+            <img src="/Assets/images-Vishal/work-2.png" alt="" />
+            <div class="layer">
+              <h3>Spotify Clone</h3>
+              <p>
+                A Spotify clone frontend project, crafted with HTML, CSS, and
+                JavaScript, offers an immersive music streaming experience.The
+                frontend design is responsive, ensuring seamless access across
+                various devices for an optimized user experience.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <!-- work 3 -->
+          <div class="work">
+            <img src="/Assets/images-Vishal/work-3.png" alt="" />
+            <div class="layer">
+              <h3>Quiz Game</h3>
+              <p>
+                A C++ quiz game project delivers an interactive gaming
+                experience, leveraging C++ for robust functionality and seamless
+                performance. Players engage in answering questions across
+                various categories, with scoring and timer.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- -----------------------Contact----------------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>
+              vishalkbhat.cs23@rvce.edu.in
+            </p>
+            <p><i class="fa-solid fa-phone"></i> +91 7979806665</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <a href="/Assets/images-Vishal/my-cv.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="text"
+                name="Email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          " The best error message is the one that never shows up. "
+          <br />
+          Copyright &copy; Vishal Bhat
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbz1nMjDY70SiRcTa_0gbndUqrnmJV6K9QHgO4-pGQreG4_PxF2sBFCx1DUdv-Awp5xZJA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
