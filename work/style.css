@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.content {
+  border: 8px solid #262626;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  width: 70%px;
+}
+
+.content ul li {
+  display: flex;
+}
+.col-1 {
+  width: 90%;
+}
+
+.col-2 {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links {
+  text-decoration: none;
+  color: #ff004f;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.links:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  padding: 10px 30px;
+  border: 1px solid #ff004f;
+  color: white;
+  text-decoration: none;
+  transition: background 0.5s;
+  border-radius: 6px;
+  margin: 10px;
+}
+.btn:hover {
+  background: #ff004f;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    background: #262626;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+
+  }
+  
+  .copyright i {
+    color: #ff004f;
+  }
+  
