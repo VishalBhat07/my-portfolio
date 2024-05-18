@@ -11,6 +11,7 @@ body {
   background-color: black;
   color: white;
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -22,11 +23,11 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 30px;
-  color: #fff;
+  color: #ff004f;
 }
 
 .content {
-  border: 8px solid #40137b;
+  border: 2px solid white;
   border-radius: 10px;
   margin: 20px;
   padding: 20px;
@@ -41,17 +42,25 @@ body {
 }
 
 .col-2 {
-  width: 10%;
+  width: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* #git-span{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} */
+
 .links {
   text-decoration: none;
+  /* color: #ff004f; */
   color: #ff004f;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .links:hover {
@@ -66,7 +75,24 @@ body {
   transition: background 0.5s;
   border-radius: 6px;
   margin: 10px;
+  display: flex;
+  align-items: center;
 }
+
+.btn a {
+  text-decoration: none;
+  color: white;
+  padding-right: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#git-logo {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
 .btn:hover {
   background: #ff004f;
 }
