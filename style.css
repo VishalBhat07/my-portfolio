@@ -454,4 +454,10 @@ nav .fas {
   color: #61b752;
   margin-top: -10px;
   display: block;
+  margin-bottom: 30px;
+}
+
+#mail {
+  text-decoration: none;
+  color: white;
 }
