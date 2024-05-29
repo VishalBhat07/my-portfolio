@@ -109,3 +109,143 @@ body {
 .copyright i {
   color: #ff004f;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #ff004f;
+  padding: 20px;
+}
+
+.content {
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.content ul {
+  list-style-type: none;
+}
+
+.content ul li {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-1 {
+  width: 100%;
+}
+
+.col-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 10px 30px;
+  border: 1px solid #ff004f;
+  color: white;
+  text-decoration: none;
+  transition: background 0.5s;
+  border-radius: 6px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
+  padding-right: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#git-logo {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ff004f;
+}
+
+.links {
+  text-decoration: none;
+  color: #ff004f;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.links:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  background: #262626;
+  padding: 5px 10px;
+  margin-top: 20px;
+}
+
+.copyright p {
+  margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (min-width: 600px) {
+  .content ul li {
+    flex-direction: row;
+  }
+
+  .col-1 {
+    width: 75%;
+  }
+
+  .col-2 {
+    width: 25%;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .header {
+    font-size: 40px;
+  }
+
+  .links {
+    font-size: 28px;
+  }
+}

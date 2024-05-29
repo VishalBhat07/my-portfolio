@@ -445,6 +445,10 @@ nav .fas {
     flex-basis: 100%;
   }
 
+  .contact-right {
+    padding-left: 50px;
+  }
+
   .copyright {
     font-size: 13px;
   }

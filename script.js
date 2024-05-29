@@ -14,7 +14,7 @@ function opentab(tabname) {
 
 // -----------------Adding responsiveness------------------------
 
-var sidemenu = doucment.getElementById("sidemenu");
+var sidemenu = document.getElementById("sidemenu");
 
 function openmenu() {
   sidemenu.style.right = "0";
