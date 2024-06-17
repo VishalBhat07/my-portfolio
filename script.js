@@ -23,3 +23,35 @@ function openmenu() {
 function closemenu() {
   sidemenu.style.right = "-200px";
 }
+
+// ----------------------Added typing Effect---------------------
+
+const texts = ["Web Developer", "Passionate Coder", "Tech Enthusiast"];
+let currentIndex = 0;
+let currentText = "";
+let currentCharIndex = 0;
+let isDeleting = false;
+
+function type() {
+  const typeJsText = document.querySelector(".typeJsText");
+  const fullText = texts[currentIndex];
+
+  if (isDeleting) {
+    currentText = fullText.substring(0, currentCharIndex--);
+  } else {
+    currentText = fullText.substring(0, currentCharIndex++);
+  }
+
+  typeJsText.textContent = currentText;
+
+  if (!isDeleting && currentCharIndex === fullText.length) {
+    setTimeout(() => (isDeleting = true), 2000); // Pause at the end of the word
+  } else if (isDeleting && currentCharIndex === 0) {
+    isDeleting = false;
+    currentIndex = (currentIndex + 1) % texts.length;
+  }
+
+  setTimeout(type, isDeleting ? 100 : 150);
+}
+
+type(); // Start the typing effect

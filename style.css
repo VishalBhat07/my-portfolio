@@ -473,3 +473,10 @@ nav .fas {
   text-decoration: none;
   color: white;
 }
+
+.typeJsText {
+  font-size: 30px;
+  font-weight: 200;
+  display: inline-block;
+  border-right: 1px solid #414141;
+}
