@@ -26,7 +26,15 @@ function closemenu() {
 
 // ----------------------Added typing Effect---------------------
 
-const texts = ["Web Developer", "Passionate Coder", "Tech Enthusiast"];
+const texts = [
+  "Web Developer",
+  "Passionate Coder",
+  "Tech Enthusiast",
+  "Algorithms",
+  "Full-Stack Developer",
+  "Python Proficient",
+  "Efficient C++ Coder",
+];
 let currentIndex = 0;
 let currentText = "";
 let currentCharIndex = 0;
@@ -45,7 +53,7 @@ function type() {
   typeJsText.textContent = currentText;
 
   if (!isDeleting && currentCharIndex === fullText.length) {
-    setTimeout(() => (isDeleting = true), 2000); // Pause at the end of the word
+    setTimeout(() => (isDeleting = true), 200); // Pause at the end of the word
   } else if (isDeleting && currentCharIndex === 0) {
     isDeleting = false;
     currentIndex = (currentIndex + 1) % texts.length;
