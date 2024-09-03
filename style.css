@@ -160,6 +160,14 @@ nav ul li a:hover::after {
   display: block;
 }
 
+.certbtn {
+  text-decoration: none;
+  background-color: #ff004f;
+  margin: 0 20px;
+  padding: 5px 30px;
+  border-radius: 2px;
+  color: white;
+}
 /* ------------------Services section------------------- */
 #services {
   padding: 30px 80px;
