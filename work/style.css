@@ -1,251 +1,154 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap");
 
-* {
+body {
+  font-family: "Baloo Bhaijaan 2", sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Baloo Bhaijaan 2", sans-serif;
-}
-
-body {
-  background-color: black;
-  color: white;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text for contrast */
+  line-height: 1.6;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  color: #ff004f;
-}
-
-.content {
-  border: 2px solid white;
-  border-radius: 10px;
-  margin: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
-  width: 70%px;
 }
 
-.content ul li {
+.header{
   display: flex;
-}
-.col-1 {
-  width: 90%;
-}
-
-.col-2 {
-  width: 15%;
-  display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-/* #git-span{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-} */
-
-.links {
-  text-decoration: none;
-  /* color: #ff004f; */
-  color: #ff004f;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.links:hover {
-  text-decoration: underline;
-}
-
-.btn {
-  padding: 10px 30px;
-  border: 1px solid #ff004f;
-  color: white;
-  text-decoration: none;
-  transition: background 0.5s;
-  border-radius: 6px;
-  margin: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.btn a {
-  text-decoration: none;
-  color: white;
-  padding-right: 10px;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-#git-logo {
-  width: 26px;
-  height: 26px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background: #ff004f;
-}
-
-.copyright {
-  width: 100%;
+/* Header Styles */
+.header h1 {
   text-align: center;
-  background: #262626;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-top: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00d8ff; /* Light cyan color for header */
 }
 
-.copyright i {
-  color: #ff004f;
+.header a {
+  cursor: pointer;
+  color: #00d8ff;
+  border-bottom: 1px solid #00d8ff;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 10px 20px;
+  border-radius: 8px;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Baloo Bhaijaan 2", sans-serif;
+.header a:hover {
+ text-decoration: underline;
 }
 
-body {
-  background-color: black;
-  color: white;
-}
-
-.container {
+/* Works Section */
+.works {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
+  gap: 20px;
 }
 
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  color: #ff004f;
-  padding: 20px;
-}
-
+/* Content Card */
 .content {
-  border: 2px solid white;
-  border-radius: 10px;
-  margin: 20px;
+  background-color: #121212; /* Dark grey card background */
+  border: 1px solid #333; /* Subtle border for cards */
+  border-radius: 8px;
   padding: 20px;
-  width: 100%;
-  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.content:hover {
+  transform: translateY(-5px); /* Slight hover effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
 }
 
 .content ul {
-  list-style-type: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.content ul li {
+.content li {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
+/* Column 1 - Text Content */
 .col-1 {
-  width: 100%;
+  flex: 2;
+  margin-right: 20px;
 }
 
-.col-2 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.btn {
-  padding: 10px 30px;
-  border: 1px solid #ff004f;
-  color: white;
+.col-1 .links {
+  font-size: 1.2rem;
+  color: #00d8ff; /* Link color */
   text-decoration: none;
-  transition: background 0.5s;
-  border-radius: 6px;
-  margin: 10px;
-  display: flex;
-  align-items: center;
+  font-weight: bold;
 }
 
-.btn a {
-  text-decoration: none;
-  color: white;
-  padding-right: 10px;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-#git-logo {
-  width: 26px;
-  height: 26px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background: #ff004f;
-}
-
-.links {
-  text-decoration: none;
-  color: #ff004f;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.links:hover {
+.col-1 .links:hover {
   text-decoration: underline;
 }
 
+.col-1 p {
+  margin: 10px 0;
+  color: #ccc; /* Light grey for descriptions */
+}
+
+/* Column 2 - GitHub Link */
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.col-2 .btn {
+  display: flex;
+  align-items: center; /* Align logo and text horizontally */
+  justify-content: center; /* Center the content */
+  background-color: #333; /* Button background */
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.col-2 .btn a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 10px; /* Space between the link text and the logo */
+}
+
+.col-2 :hover {
+  background-color: #00d8ff; /* Hover effect for button */
+}
+
+#git-logo {
+  width: 20px; /* Adjust logo size */
+  height: 20px;
+}
+
+/* Footer */
 .copyright {
-  width: 100%;
   text-align: center;
-  background: #262626;
-  padding: 5px 10px;
-  margin-top: 20px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #555; /* Light grey for footer */
 }
 
 .copyright p {
-  margin: 5px 0;
+  margin: 0;
 }
 
-/* Responsive Styles */
-@media (min-width: 600px) {
-  .content ul li {
-    flex-direction: row;
-  }
-
-  .col-1 {
-    width: 75%;
-  }
-
-  .col-2 {
-    width: 25%;
-    margin-top: 0;
-  }
-}
-
-@media (min-width: 900px) {
-  .header {
-    font-size: 40px;
-  }
-
-  .links {
-    font-size: 28px;
-  }
+.copyright p a {
+  color: #00d8ff;
+  text-decoration: none;
 }

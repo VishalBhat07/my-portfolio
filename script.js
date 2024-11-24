@@ -27,13 +27,13 @@ function closemenu() {
 // ----------------------Added typing Effect---------------------
 
 const texts = [
-  "Web Developer",
-  "Passionate Coder",
-  "Tech Enthusiast",
+  "Web Development",
+  "Computer Science",
+  "LeetCode",
+  "Data Structures",
   "Algorithms",
-  "Full-Stack Developer",
-  "Python Proficient",
-  "Efficient C++ Coder",
+  "C++",
+  "Codeforces",
 ];
 let currentIndex = 0;
 let currentText = "";

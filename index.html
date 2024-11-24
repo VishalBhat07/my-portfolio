@@ -7,17 +7,20 @@
   <title>Vishal Bhat - Portfolio</title>
   <link rel="stylesheet" href="./style.css" />
   <script src="https://kit.fontawesome.com/36e4dd0220.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 </head>
 
 <body>
   <!-- Header section -->
   <div id="header">
+    <div id="particles-js"></div>
     <div class="container">
       <nav>
         <img class="logo" src="./Assets/images-Vishal/logo.png" alt="" />
         <ul id="sidemenu">
           <li><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="./work/work.html">My Projects</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -30,6 +33,7 @@
         <h1>Hi, I'm <span>Vishal Bhat</span> <br />
           <span class="typeJsText" style="color: white;" data-typetext="Web Developer"></span>
         </h1>
+        <a class="projects-btn" href="./work/work.html">Check out my projects</a>
       </div>
     </div>
   </div>
@@ -39,7 +43,7 @@
     <div class="container">
       <div class="row">
         <div class="about-col-1">
-          <img src="./Assets/images-Vishal/pfp4.jpeg" alt="" />
+          <img src="./Assets/images-Vishal/pfp.jpg" alt="" />
         </div>
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
@@ -68,9 +72,12 @@
               <li><span>C & C++</span><br />&#9702 Solid understanding of data structures, algorithms, and memory
                 management.<br />&#9702 Proficient in object-oriented programming and using the STL.</li>
               <li><span>Python</span><br>
-                &#9702 Proficient in writing clean, modular, and efficient code with a strong understanding of Python's standard library.
+                &#9702 Proficient in writing clean, modular, and efficient code with a strong understanding of Python's
+                standard library.
                 <br>
-                &#9702 Familiar with basic NumPy and Pandas, and experienced in building projects using various libraries.</li>
+                &#9702 Familiar with basic NumPy and Pandas, and experienced in building projects using various
+                libraries.
+              </li>
               <li>
                 <span>HTML, CSS and JavaScript</span><br />&#9702 Proficient in crafting semantic HTML for structured
                 content, expertise in responsive design using CSS.<br />&#9702 Advanced
@@ -112,7 +119,9 @@
             <ul>
               <li>
                 <span>Infosys Springboard</span><br />Career Skills in Software Development
-                <a target="_blank" href="./Assets/certificates/CertificateOfCompletion_Introduction to Career Skills in Software Development.pdf" download class="certbtn">View</a>
+                <a target="_blank"
+                  href="./Assets/certificates/CertificateOfCompletion_Introduction to Career Skills in Software Development.pdf"
+                  download class="certbtn">View</a>
               </li>
               <li>
                 <span>Flipkart</span><br />Flipkart Grid 6.0
@@ -124,7 +133,9 @@
               </li>
               <li>
                 <span>Infosys Springboard</span><br />Young Industry Enthusiast - Capital Markets
-                <a target="_blank" href="./Assets/certificates/Infosys Springboard Young Industry Enthusiast - Capital Markets.pdf" download class="certbtn">View</a>
+                <a target="_blank"
+                  href="./Assets/certificates/Infosys Springboard Young Industry Enthusiast - Capital Markets.pdf"
+                  download class="certbtn">View</a>
               </li>
             </ul>
           </div>
@@ -207,7 +218,7 @@
               calls. The tracker provides an intuitive interface for monitoring prices and price changes of some famous
               cryptocurrencies with 24h market cap and charts.
             </p>
-            <a href="https://cryptoplace-cryptotracker.vercel.app/" target="_blank"><i
+            <a href="https://cryptoplace-six.ve rcel.app/" target="_blank"><i
                 class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
         </div>
@@ -215,19 +226,18 @@
         <div class="work">
           <img src="./Assets/images-Vishal/work-3.png" alt="" />
           <div class="layer">
-            <h3>Quiz Game</h3>
+            <h3>Journal Management System for ASM</h3>
             <p>
-              A C++ quiz game project delivers an interactive gaming
-              experience, leveraging C++ for robust functionality and seamless
-              performance. Players engage in answering questions across
-              various categories, with scoring and timer.
+              A project built for ASM Journal under the Mechanical Dept of RVCE.
+              Developed a secure platform for publishing academic articles using React and Firebase providing a seamless
+              platform for managing and showcasing academic content.
             </p>
-            <a href="https://github.com/VishalBhat07/quiz-game" target="_blank"><i
+            <a href="https://asm-journal.vercel.app" target="_blank"><i
                 class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
         </div>
       </div>
-      <a href="./work/work.html" target="_blank" class="btn">See more</a>
+      <a href="./work/work.html" target="_blank" class="btn">Check out my projects here</a>
     </div>
   </div>
   <!-- -----------------------Contact----------------------------->
@@ -245,7 +255,8 @@
           <div class="social-icons">
             <a href="https://github.com/VishalBhat07" target="_blank"><i class="fa-brands fa-github"><span>
                   GitHub</span></i></a>
-            <a href="https://www.linkedin.com/in/VishalBhat07/" target="_blank"><i class="fa-brands fa-linkedin"> <span> LinkedIn</span></i></a>
+            <a href="https://www.linkedin.com/in/VishalBhat07/" target="_blank"><i class="fa-brands fa-linkedin"> <span>
+                  LinkedIn</span></i></a>
             <a href="https://leetcode.com/VishalBhat07/" target="_blank"><i class="fa-solid fa-code"> <span
                   id="leetcode"> LeetCode</span></i></a>
             <a href="https://www.instagram.com/vishalbhat07/" target="_blank"><i class="fa-brands fa-instagram"> <span>
@@ -292,6 +303,41 @@
           form.reset();
         })
         .catch((error) => console.error("Error!", error.message));
+    });
+
+    particlesJS('particles-js', {
+      "particles": {
+        "number": {
+          "value": 100,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffff00"
+        },
+        "shape": {
+          "type": "circle"
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": true
+        },
+        "size": {
+          "value": 3,
+          "random": true
+        },
+        "line_linked": {
+          "enable": true,
+          "color": "#ffff00"
+        },
+        "move": {
+          "enable": true,
+          "speed": 6
+        }
+      },
+      "retina_detect": true
     });
   </script>
 </body>
